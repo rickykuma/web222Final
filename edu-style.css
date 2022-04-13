@@ -1,0 +1,12 @@
+main{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+.card-holder{
+    display: grid;
+    grid-template-columns:55% 50%;
+
+}
+
