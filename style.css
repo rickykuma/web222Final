@@ -26,7 +26,7 @@ header h1{
 }
 
 #about-me div{
-    padding: 13px; 
+    padding: 13px;
     background-color: #f2f4f7;
 }
 #pic-main{
@@ -59,8 +59,7 @@ header h1{
 } */
 
 form{
-    margin-top: 3em;
-    padding: 2em; 
+    padding: 1em;
 }
 
 input:focus, textarea:focus{
@@ -70,4 +69,23 @@ input:focus, textarea:focus{
 
 #date{
     font-weight: 600;
+}
+
+
+.card-holder{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 2em;
+}
+
+#form-div{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edu-header{
+    color: #769fcd
 }
