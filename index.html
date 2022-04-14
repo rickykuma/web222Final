@@ -29,10 +29,10 @@
             <a href="./files/my-cv.pdf" download>
             <button type="button" class="btn btn-outline-primary">Download Resume</button>
              </a>  
-             <a href="./form.html">
+             <a href="#form-div">
             <button type="button" class="btn btn-outline-primary ml-2">Contact Me</button>
              </a>  
-             <a href="./education.html">
+             <a href="#edu-div">
                 <button type="button" class="btn btn-outline-primary ml-2">Education</button>
             </a>  
             <a href="https://youtu.be/1P56cSpsCSg" target="_blank">
@@ -40,9 +40,11 @@
             </a>  
         </div>
 
-        <div class="d-flex justify-content-center border" id="about-me">
+        <div class="d-flex justify-content-center border mt-5" id="about-me">
             <div class="container " id="text-about-me">
-                <h3>About me & Honesty</h3>
+                <h3>About me</h3>
+                <p>I'm a 21-year old student from Iran. In the future I hope to become a back-end software developer.</p>
+                <h3>Honesty: </h3>
                 <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
                 </p>
 
@@ -75,8 +77,111 @@
 
         </div>
        
+        <div id="edu-div">
+            <div class="p-5 text-center pb-1 edu-header">
+                <h2>Education</h2>
+            </div>
+            <div class="card-holder ">
+                <div class="card text-dark bg-light mb-3 educard" style="max-width: 18rem;">
+                    <div class="card-header">Highschool</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Tehran International School</h5>
+                    <p class="card-text">Graduated highschool in 2019 with a focus on mathematics<p>
+                </div>
+                </div>
 
+                <div class="card text-dark bg-light mb-3 educard" style="max-width: 18rem;">
+                    <div class="card-header">French Language program</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Concordia University</h5>
+                    <p class="card-text">Completed 6-month intensive French Language program<p>
+                    </div>
+                </div>
+
+                <div class="card text-dark bg-light mb-3 educard" style="max-width: 18rem;">
+                    <div class="card-header">Collegial Studies</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Seneca College</h5>
+                    <p class="card-text">Currently enrolled in 2 year computer programming course at Seneca College<p>
+                    </div>
+                </div>
+
+                <div class="card text-dark bg-light mb-3 educard" style="max-width: 18rem;">
+                    <div class="card-header">Online Python Course</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Udemy</h5>
+                    <p class="card-text"> 5-week Python course for front-end development <p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
         
+        <div id="form-div">
+            <div class="pt-5 text-center pb-0 edu-header">
+                <h2>Contact me</h2>
+            </div>
+            <form action="https://httpbin.org/post" method="post" target="_blank">
+                <label for="fName"> <span class="text-danger">* </span> Full Name:</label>
+                <input type="text" id="fName" name="fName" autocomplete="name" class="form-control" placeholder="Enter your full name" required>
+
+                <label for="email"><span class="text-danger">* </span> Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+
+                <label for="address"> <span class="text-danger">* </span>Address: </label>
+                <input type="text" id="address" name="address" class="form-control" required placeholder="Street Address">
+                <div class="postal-city">
+                    <label for="city"><span class="text-danger">* </span>City: </label>
+                    <input type="text" id="city" name="city" list="cities"class="form-control" required placeholder="City of residence">
+
+                    <datalist id="cities" > 
+                        <option value="Montreal"></option>
+                        <option value="Vancouver"></option>
+                        <option value="Toronto"></option>
+                        <option value="Calgary"></option>
+                        <option value="Quebec City"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Edmonton"></option>
+                        <option value="Winnipeg"></option>
+                    </datalist>
+
+                    <label for="postal"><span class="text-danger">* </span>Postal Code: </label>
+                    <input type="text" id="postal" name="postal" class="form-control" placeholder="A1A-Z9Z" required pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$">
+                 </div>
+                <div class="d-flex justify-content-around mt-2 mb-2">
+                    <div>
+                        <input type="radio" id="question" name="user-choice" class="form-check-input" required checked>
+                        <label for="question" class="form-check-label">Question </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="comment" name="user-choice" class="form-check-input" required>
+                        <label for="comment" class="form-check-label">Comment </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hiring" name="user-choice" class="form-check-input" required >
+                        <label for="hiring" class="form-check-label">Hiring </label>
+                    </div>
+                    
+                </div>
+                <div id="rate-div">
+                    <label for="rate">Hourly Rate: </label>
+                    <input type="text" id="rate" name="rate" placeholder="Enter Hourly rate in $CAD" >
+                </div>
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea class="form-control" type="text" id="message" name="message" rows="5" placeholder="Write something.."></textarea>
+                </div>
+                <div class="file-upload mt-3 mb-3">
+                    <label for="userFile"> Upload related files</label>
+                    <input type="file" name="userFile" id="userFile" class="form-control-file mb-3">
+                </div>
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                <input type="reset" name="reset" value="Reset" class="btn btn-secondary ">
+
+
+            </form>
+
+        </div>
 
     </main>
 
