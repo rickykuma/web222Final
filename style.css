@@ -4,6 +4,12 @@ main{
 
 }
 
+body{
+    width: 95vw;
+    max-width: 1024px;
+    margin: auto;
+}
+
 .main-body{
     background-color: #f7fbfc;
     max-width: 85%;
@@ -77,15 +83,35 @@ input:focus, textarea:focus{
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    justify-content: center;
 
     gap: 2em;
 }
 
 #form-div{
-    max-width: 50%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 .edu-header{
     color: #769fcd
 }
+
+.educard{
+    min-height: 250px;
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    #form-div{
+        max-width: 85%;
+    }
+    .main-buttons{
+        max-width: 100%;
+    }
+
+  }
