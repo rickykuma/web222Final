@@ -17,7 +17,6 @@ header h1{
 
 #form{
     max-width: 50%;
-    
 }
 
 #about-me{
@@ -55,14 +54,13 @@ header h1{
     display: none;
 }
 
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 
 form{
     margin-top: 3em;
     padding: 2em; 
-
 }
 
 input:focus, textarea:focus{
